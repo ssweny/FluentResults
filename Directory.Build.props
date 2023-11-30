@@ -1,0 +1,37 @@
+<Project>
+	<PropertyGroup>
+		<!--BUILD-->
+		<RepositoryType>git</RepositoryType>
+		<LangVersion>10.0</LangVersion>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<!--<TreatWarningsAsErrors>true</TreatWarningsAsErrors>-->
+		<NoWarn>$(NoWarn);CS1701;CS1702;CS1591</NoWarn>
+		<PublishRepositoryUrl>true</PublishRepositoryUrl>
+		<EmbedUntrackedSources>true</EmbedUntrackedSources>
+		<IncludeSymbols>true</IncludeSymbols>
+		<DebugType>embedded</DebugType>
+		
+		<!--META-->
+		<Authors>Michael Altmann</Authors>
+		<Copyright>Copyright 2023 (c) Michael Altmann. All rights reserved.</Copyright>
+		<Version>8.0.0.0</Version>
+
+		<!--PACKAGE-->
+		<PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<PackageProjectUrl>https://github.com/altmann/FluentResults</PackageProjectUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/altmann/FluentResults/master/resources/icons/FluentResults-Icon-128.png</PackageIconUrl>
+		<PackageIcon>FluentResults-Icon-128.png</PackageIcon>
+		<PackageReleaseNotes>
+			FIXED - Result get packed twice because of implicit conversion to Result of object #165
+		</PackageReleaseNotes>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.1.1">
+			<PrivateAssets>all</PrivateAssets>
+			<IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+		</PackageReference>
+	</ItemGroup>
+</Project>

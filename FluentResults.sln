@@ -9,6 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentResults.Test", "src\F
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9F5B3FEF-160F-4FA8-8792-6E8B1C5BAF5C}"
 	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		Directory.Build.props = Directory.Build.props
+		nuget.config = nuget.config
 		..\README.md = ..\README.md
 	EndProjectSection
 EndProject
@@ -25,6 +28,10 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentResults.Extensions.AspNetCore", "src\FluentResults.Extensions.AspNetCore\FluentResults.Extensions.AspNetCore.csproj", "{0680CB50-6A06-45D6-893B-2FF150B4F04D}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FluentResults.Samples.WebHost", "src\FluentResults.Samples.WebHost\FluentResults.Samples.WebHost.csproj", "{47A242AF-DB1A-4E2C-A1BE-E3C2840BD9F5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{54BD22E0-469D-4EBF-AB64-4B5B179EF691}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{C2F6DAE5-4A05-4E6F-9A85-CC69F8F97595}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,8 +76,13 @@ Global
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
+		{E8FF223C-41DD-4527-9A53-78F1B1889F74} = {54BD22E0-469D-4EBF-AB64-4B5B179EF691}
+		{7932AE48-8B14-4DCF-BFE2-5778F68E9D44} = {C2F6DAE5-4A05-4E6F-9A85-CC69F8F97595}
 		{9DFB66EF-0721-4A78-8DC7-798434D51F79} = {B5131451-22F9-47BB-919A-391FDDFC7806}
 		{D33EA32F-D248-4855-8EB5-99081EE17321} = {B5131451-22F9-47BB-919A-391FDDFC7806}
+		{E6C27C0B-B918-4F8B-85DB-A40A6916019D} = {54BD22E0-469D-4EBF-AB64-4B5B179EF691}
+		{49E1E17B-4943-492E-B444-57F8774B5DA3} = {C2F6DAE5-4A05-4E6F-9A85-CC69F8F97595}
+		{0680CB50-6A06-45D6-893B-2FF150B4F04D} = {54BD22E0-469D-4EBF-AB64-4B5B179EF691}
 		{47A242AF-DB1A-4E2C-A1BE-E3C2840BD9F5} = {B5131451-22F9-47BB-919A-391FDDFC7806}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
