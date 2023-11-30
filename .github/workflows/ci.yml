@@ -24,7 +24,22 @@ jobs:
       run: dotnet restore --nologo
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build --no-restore --configuration Release
 
     - name: Test
       run: dotnet test --no-build --verbosity normal
+
+    - name: Pack FluentResults
+      run: dotnet pack .\src\FluentResults\FluentResults.csproj --no-build --output artifacts
+
+    - name: Pack FluentResults.Extensions.AspNetCore
+      run: dotnet pack .\src\FluentResults\FluentResults.Extensions.AspNetCore.csproj --no-build --output artifacts
+
+    - name: Pack FluentResults.Extensions.FluentAssertions
+      run: dotnet pack .\src\FluentResults\FluentResults.Extensions.FluentAssertions.csproj --no-build --output artifacts
+
+    - name: Upload artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: artifacts
+        path: artifacts/**/*
