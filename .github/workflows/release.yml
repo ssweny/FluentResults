@@ -4,8 +4,6 @@
 name: release
 
 on:
-  push:
-    branches: [ "master" ] 
   pull_request:
     branches: [ "master" ]
 
@@ -44,5 +42,4 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: nupkgs
-        path: **/nupkgs/*
-        
+        path: '**/nupkgs/*'
